@@ -1,0 +1,663 @@
+/* Courses Page Specific Styles */
+.back-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border-color);
+    background: var(--card-bg);
+    color: var(--text-primary);
+    border-radius: 8px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.back-btn:hover {
+    background: var(--accent-color);
+    color: white;
+    border-color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+/* Course Sections */
+.course-section {
+    display: none;
+}
+
+.course-section.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.course-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: var(--card-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+}
+
+.course-badge {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--accent-gradient);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+}
+
+body.dark-theme .course-badge {
+    background: var(--accent-gradient-dark);
+}
+
+body.hacker-theme .course-badge {
+    background: var(--accent-gradient-hacker);
+    color: #000;
+}
+
+.course-info h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.course-info p {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.course-meta {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* Session Cards */
+.session-card {
+    background: var(--card-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.session-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px var(--shadow-color);
+}
+
+.session-header {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.session-number {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--accent-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+body.dark-theme .session-number {
+    background: var(--accent-color-dark);
+}
+
+body.hacker-theme .session-number {
+    background: var(--accent-color-hacker);
+    color: #000;
+}
+
+.session-info {
+    flex: 1;
+}
+
+.session-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.25rem;
+    color: var(--text-primary);
+}
+
+.session-info p {
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.session-status {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.session-status.completed {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.session-status.pending {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+body.dark-theme .session-status.completed {
+    background: #166534;
+    color: #dcfce7;
+}
+
+body.dark-theme .session-status.pending {
+    background: #92400e;
+    color: #fef3c7;
+}
+
+.session-content {
+    padding: 0 1.5rem 1.5rem;
+    border-top: 1px solid var(--border-color);
+    margin-top: 1rem;
+}
+
+/* Materials Grid */
+.materials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.material-card {
+    background: var(--nav-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    transition: all 0.3s ease;
+}
+
+.material-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+.material-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.pdf-material .material-icon {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.video-material .material-icon {
+    background: #dbeafe;
+    color: #2563eb;
+}
+
+.exercise-material .material-icon {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+body.dark-theme .pdf-material .material-icon {
+    background: #7f1d1d;
+    color: #fecaca;
+}
+
+body.dark-theme .video-material .material-icon {
+    background: #1e3a8a;
+    color: #93c5fd;
+}
+
+body.dark-theme .exercise-material .material-icon {
+    background: #14532d;
+    color: #bbf7d0;
+}
+
+.material-info {
+    flex: 1;
+}
+
+.material-info h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.material-info p {
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+}
+
+.material-meta {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.material-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-self: center;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background: var(--accent-color);
+    color: white;
+}
+
+.btn-secondary {
+    background: var(--card-bg);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+}
+
+body.dark-theme .btn-primary {
+    background: var(--accent-color-dark);
+}
+
+body.hacker-theme .btn-primary {
+    background: var(--accent-color-hacker);
+    color: #000;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+/* Session Objectives */
+.session-objectives {
+    background: var(--nav-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.session-objectives h4 {
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.session-objectives ul {
+    list-style: none;
+    padding: 0;
+}
+
+.session-objectives li {
+    padding: 0.5rem 0;
+    color: var(--text-secondary);
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.session-objectives li:before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+body.dark-theme .session-objectives li:before {
+    color: var(--accent-color-dark);
+}
+
+body.hacker-theme .session-objectives li:before {
+    color: var(--accent-color-hacker);
+}
+
+/* Upload Section */
+.upload-container {
+    background: var(--card-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+.upload-area {
+    border: 2px dashed var(--border-color);
+    border-radius: 10px;
+    padding: 3rem 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.upload-area:hover, .upload-area.drag-over {
+    border-color: var(--accent-color);
+    background: var(--nav-bg);
+}
+
+.upload-area.drag-over {
+    transform: scale(1.02);
+}
+
+.upload-icon {
+    font-size: 3rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.upload-area h3 {
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.upload-area p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.uploaded-files {
+    margin-top: 2rem;
+}
+
+.uploaded-files h4 {
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.files-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.file-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--nav-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+.file-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    background: var(--accent-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+body.dark-theme .file-icon {
+    background: var(--accent-color-dark);
+}
+
+body.hacker-theme .file-icon {
+    background: var(--accent-color-hacker);
+    color: #000;
+}
+
+.file-info {
+    flex: 1;
+}
+
+.file-name {
+    font-weight: 500;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+}
+
+.file-meta {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.file-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.upload-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+}
+
+/* Progress Section */
+.progress-stats {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 3rem;
+    align-items: start;
+    background: var(--card-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+.progress-card {
+    text-align: center;
+}
+
+.progress-info h4 {
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.progress-info p {
+    color: var(--text-secondary);
+}
+
+.progress-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.detail-item:last-child {
+    border-bottom: none;
+}
+
+.detail-label {
+    color: var(--text-secondary);
+}
+
+.detail-value {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.achievements {
+    margin-top: 2rem;
+}
+
+.achievements h4 {
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.achievement-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--nav-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+}
+
+.achievement-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.achievement-icon.completed {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.achievement-icon.pending {
+    background: #f1f5f9;
+    color: #64748b;
+}
+
+body.dark-theme .achievement-icon.completed {
+    background: #166534;
+    color: #dcfce7;
+}
+
+body.dark-theme .achievement-icon.pending {
+    background: #374151;
+    color: #9ca3af;
+}
+
+.achievement-info h5 {
+    margin-bottom: 0.25rem;
+    color: var(--text-primary);
+}
+
+.achievement-info p {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+/* PDF Viewer Modal */
+.pdf-viewer {
+    max-width: 90%;
+    width: 1000px;
+    height: 90vh;
+}
+
+.pdf-viewer .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-actions {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.pdf-container {
+    height: calc(100% - 60px);
+    background: #f8f9fa;
+    border-radius: 8px;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pdf-placeholder {
+    text-align: center;
+    color: var(--text-secondary);
+}
+
+.pdf-placeholder i {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: #dc2626;
+}
+
+/* Video Viewer Modal */
+.video-viewer {
+    max-width: 90%;
+    width: 800px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+
+.v

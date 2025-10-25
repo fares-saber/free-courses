@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - CodeMaster</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="courses.css">
+</head>
+<body class="light-theme" dir="ltr">
+    <!-- Background Container -->
+    <div class="background-container"></div>
+    <div class="matrix-container"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <i class="fas fa-code"></i>
+                    <span data-en="CodeMaster" data-ar="ماستر الكود">CodeMaster</span>
+                </div>
+                <div class="controls">
+                    <button class="theme-toggle" id="themeToggle">
+                        <span class="theme-icon">🌙</span>
+                        <span class="theme-text" data-en="Dark Mode" data-ar="الوضع الداكن">Dark Mode</span>
+                    </button>
+                    <button class="lang-toggle" id="langToggle">
+                        <span class="lang-text" data-en="العربية" data-ar="English">العربية</span>
+                    </button>
+                    <a href="index.html" class="back-btn">
+                        <i class="fas fa-arrow-left"></i>
+                        <span data-en="Back to Home" data-ar="العودة للرئيسية">Back to Home</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-content">
+                <h1 class="hero-title" data-en="Course Library" data-ar="مكتبة الدورات">Course Library</h1>
+                <p class="hero-subtitle" data-en="Access all courses and learning materials in one place" data-ar="الوصول إلى جميع الدورات ومواد التعلم في مكان واحد">Access all courses and learning materials in one place</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav class="navigation">
+        <div class="menu">
+            <a href="#html-course" class="link active">
+                <span class="link-icon">
+                    <i class="fab fa-html5"></i>
+                </span>
+                <span class="link-title" data-en="HTML Course" data-ar="دورة HTML">HTML Course</span>
+            </a>
+            <a href="#css-course" class="link">
+                <span class="link-icon">
+                    <i class="fab fa-css3-alt"></i>
+                </span>
+                <span class="link-title" data-en="CSS Course" data-ar="دورة CSS">CSS Course</span>
+            </a>
+            <a href="#js-course" class="link">
+                <span class="link-icon">
+                    <i class="fab fa-js"></i>
+                </span>
+                <span class="link-title" data-en="JavaScript Course" data-ar="دورة جافاسكريبت">JavaScript Course</span>
+            </a>
+            <a href="#upload" class="link">
+                <span class="link-icon">
+                    <i class="fas fa-upload"></i>
+                </span>
+                <span class="link-title" data-en="Upload PDF" data-ar="رفع PDF">Upload PDF</span>
+            </a>
+            <a href="#progress" class="link">
+                <span class="link-icon">
+                    <i class="fas fa-chart-line"></i>
+                </span>
+                <span class="link-title" data-en="Progress" data-ar="التقدم">Progress</span>
+            </a>
+        </div>
+    </nav>
+
+    <main class="main-content-area">
+        <div class="container">
+            <!-- HTML Course Section -->
+            <section id="html-course" class="course-section active">
+                <div class="course-header">
+                    <div class="course-badge">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="course-info">
+                        <h2 data-en="HTML5 Complete Course" data-ar="دورة HTML5 الكاملة">HTML5 Complete Course</h2>
+                        <p data-en="Master the foundation of web development with HTML5" data-ar="أتقن أساسيات تطوير الويب باستخدام HTML5">Master the foundation of web development with HTML5</p>
+                        <div class="course-meta">
+                            <span class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span data-en="8 Weeks" data-ar="8 أسابيع">8 Weeks</span>
+                            </span>
+                            <span class="meta-item">
+                                <i class="fas fa-book"></i>
+                                <span data-en="24 Lessons" data-ar="24 درس">24 Lessons</span>
+                            </span>
+                            <span class="meta-item">
+                                <i class="fas fa-signal"></i>
+                                <span data-en="Beginner" data-ar="مبتدئ">Beginner</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-content">
+                    <!-- Session 1 -->
+                    <div class="session-card active">
+                        <div class="session-header">
+                            <div class="session-number">01</div>
+                            <div class="session-info">
+                                <h3 data-en="HTML Basics & Structure" data-ar="أساسيات وبنية HTML">HTML Basics & Structure</h3>
+                                <p data-en="Learn the fundamental building blocks of HTML" data-ar="تعلم اللبنات الأساسية لـ HTML">Learn the fundamental building blocks of HTML</p>
+                            </div>
+                            <div class="session-status completed">
+                                <i class="fas fa-check"></i>
+                                <span data-en="Completed" data-ar="مكتمل">Completed</span>
+                            </div>
+                        </div>
+                        
+                        <div class="session-content">
+                            <div class="materials-grid">
+                                <div class="material-card pdf-material">
+                                    <div class="material-icon">
+                                        <i class="fas fa-file-pdf"></i>
+                                    </div>
+                                    <div class="material-info">
+                                        <h4 data-en="HTML Level 1 - Session 1" data-ar="HTML المستوى 1 - الجلسة 1">HTML Level 1 - Session 1</h4>
+                                        <p data-en="Introduction to HTML tags and structure" data-ar="مقدمة في وسوم HTML والبنية">Introduction to HTML tags and structure</p>
+                                        <div class="material-meta">
+                                            <span class="file-size">2.4 MB</span>
+                                            <span class="file-pages">15 pages</span>
+                                        </div>
+                                    </div>
+                                    <div class="material-actions">
+                                        <button class="btn-primary view-pdf" data-pdf="projects/HTML LVL1 S1.pptx">
+                                            <i class="fas fa-eye"></i>
+                                            <span data-en="View" data-ar="عرض">View</span>
+                                        </button>
+                                        <button class="btn-secondary download-pdf" data-pdf="projects/HTML LVL1 S1.pptx">
+                                            <i class="fas fa-download"></i>
+                                            <span data-en="Download" data-ar="تحميل">Download</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="material-card video-material">
+                                    <div class="material-icon">
+                                        <i class="fas fa-play-circle"></i>
+                                    </div>
+                                    <div class="material-info">
+                                        <h4 data-en="Video Tutorial" data-ar="فيديو تعليمي">Video Tutorial</h4>
+                                        <p data-en="HTML Basics Explained" data-ar="شرح أساسيات HTML">HTML Basics Explained</p>
+                                        <div class="material-meta">
+                                            <span class="video-duration">15:30</span>
+                                            <span class="video-quality">HD</span>
+                                        </div>
+                                    </div>
+                                    <div class="material-actions">
+                                        <button class="btn-primary watch-video">
+                                            <i class="fas fa-play"></i>
+                                            <span data-en="Watch" data-ar="مشاهدة">Watch</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="material-card exercise-material">
+                                    <div class="material-icon">
+                                        <i class="fas fa-code"></i>
+                                    </div>
+                                    <div class="material-info">
+                                        <h4 data-en="Practice Exercise" data-ar="تمرين عملي">Practice Exercise</h4>
+                                        <p data-en="Build your first HTML page" data-ar="ابنِ أول صفحة HTML لك">Build your first HTML page</p>
+                                        <div class="material-meta">
+                                            <span class="exercise-difficulty" data-en="Easy" data-ar="سهل">Easy</span>
+                                            <span class="exercise-time">30 min</span>
+                                        </div>
+                                    </div>
+                                    <div class="material-actions">
+                                        <button class="btn-primary start-exercise">
+                                            <i class="fas fa-rocket"></i>
+                                            <span data-en="Start" data-ar="ابدأ">Start</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="session-objectives">
+                                <h4 data-en="Learning Objectives" data-ar="أهداف التعلم">Learning Objectives</h4>
+                                <ul>
+                                    <li data-en="Understand HTML document structure" data-ar="فهم بنية مستند HTML">Understand HTML document structure</li>
+                                    <li data-en="Learn basic HTML tags" data-ar="تعلم وسوم HTML الأساسية">Learn basic HTML tags</li>
+                                    <li data-en="Create headings and paragraphs" data-ar="إنشاء العناوين والفقرات">Create headings and paragraphs</li>
+                                    <li data-en="Add images and links" data-ar="إضافة الصور والروابط">Add images and links</li>
+                                    <li data-en="Build simple web pages" data-ar="بناء صفحات ويب بسيطة">Build simple web pages</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Session 2 -->
+                    <div class="session-card">
+                        <div class="session-header">
+                            <div class="session-number">02</div>
+                            <div class="session-info">
+                                <h3 data-en="Forms and Input Elements" data-ar="النماذج وعناصر الإدخال">Forms and Input Elements</h3>
+                                <p data-en="Create interactive forms with various input types" data-ar="إنشاء نماذج تفاعلية بأنواع إدخال متنوعة">Create interactive forms with various input types</p>
+                            </div>
+                            <div class="session-status pending">
+                                <i class="fas fa-lock"></i>
+                                <span data-en="Locked" data-ar="مقفل">Locked</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Session 3 -->
+                    <div class="session-card">
+                        <div class="session-header">
+                            <div class="session-number">03</div>
+                            <div class="session-info">
+                                <h3 data-en="Semantic HTML5" data-ar="HTML5 الدلالي">Semantic HTML5</h3>
+                                <p data-en="Modern semantic elements for better structure" data-ar="العناصر الدلالية الحديثة لبنية أفضل">Modern semantic elements for better structure</p>
+                            </div>
+                            <div class="session-status pending">
+                                <i class="fas fa-lock"></i>
+                                <span data-en="Locked" data-ar="مقفل">Locked</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PDF Upload Section -->
+            <section id="upload" class="upload-section">
+                <div class="section-header">
+                    <h2 data-en="Upload Course Materials" data-ar="رفع مواد الدورة">Upload Course Materials</h2>
+                    <p data-en="Share PDFs, presentations, and other learning materials" data-ar="شارك ملفات PDF والعروض التقديمية ومواد التعلم الأخرى">Share PDFs, presentations, and other learning materials</p>
+                </div>
+
+                <div class="upload-container">
+                    <div class="upload-area" id="uploadArea">
+                        <div class="upload-icon">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                        </div>
+                        <h3 data-en="Drop your files here" data-ar="أسقط ملفاتك هنا">Drop your files here</h3>
+                        <p data-en="or click to browse" data-ar="أو انقر للتصفح">or click to browse</p>
+                        <input type="file" id="fileInput" accept=".pdf,.ppt,.pptx,.doc,.docx" multiple style="display: none;">
+                        <button class="btn-primary browse-btn" id="browseBtn">
+                            <i class="fas fa-folder-open"></i>
+                            <span data-en="Browse Files" data-ar="تصفح الملفات">Browse Files</span>
+                        </button>
+                    </div>
+
+                    <div class="uploaded-files" id="uploadedFiles">
+                        <h4 data-en="Uploaded Files" data-ar="الملفات المرفوعة">Uploaded Files</h4>
+                        <div class="files-list" id="filesList">
+                            <!-- Uploaded files will appear here -->
+                        </div>
+                    </div>
+
+                    <div class="upload-actions">
+                        <button class="btn-secondary" id="clearFiles">
+                            <i class="fas fa-trash"></i>
+                            <span data-en="Clear All" data-ar="مسح الكل">Clear All</span>
+                        </button>
+                        <button class="btn-primary" id="processFiles">
+                            <i class="fas fa-cog"></i>
+                            <span data-en="Process Files" data-ar="معالجة الملفات">Process Files</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Progress Section -->
+            <section id="progress" class="progress-section">
+                <div class="section-header">
+                    <h2 data-en="Your Learning Progress" data-ar="تقدمك في التعلم">Your Learning Progress</h2>
+                    <p data-en="Track your course completion and achievements" data-ar="تابع إكمال الدورة وإنجازاتك">Track your course completion and achievements</p>
+                </div>
+
+                <div class="progress-stats">
+                    <div class="progress-card">
+                        <div class="progress-circle">
+                            <div class="circle-bg"></div>
+                            <div class="circle-progress" style="--progress: 25%"></div>
+                            <div class="circle-text">
+                                <span class="percent">25%</span>
+                                <span class="label" data-en="Complete" data-ar="مكتمل">Complete</span>
+                            </div>
+                        </div>
+                        <div class="progress-info">
+                            <h4 data-en="HTML Course" data-ar="دورة HTML">HTML Course</h4>
+                            <p data-en="1 of 8 sessions completed" data-ar="1 من 8 جلسات مكتملة">1 of 8 sessions completed</p>
+                        </div>
+                    </div>
+
+                    <div class="progress-details">
+                        <div class="detail-item">
+                            <span class="detail-label" data-en="Total Sessions" data-ar="إجمالي الجلسات">Total Sessions</span>
+                            <span class="detail-value">8</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label" data-en="Completed" data-ar="المكتملة">Completed</span>
+                            <span class="detail-value">1</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label" data-en="Materials Viewed" data-ar="المواد المشاهدة">Materials Viewed</span>
+                            <span class="detail-value">3</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label" data-en="Current Streak" data-ar="التتابع الحالي">Current Streak</span>
+                            <span class="detail-value">2 days</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievements">
+                    <h4 data-en="Recent Achievements" data-ar="الإنجازات الحديثة">Recent Achievements</h4>
+                    <div class="achievements-grid">
+                        <div class="achievement-card">
+                            <div class="achievement-icon completed">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                            <div class="achievement-info">
+                                <h5 data-en="First Lesson" data-ar="الدرس الأول">First Lesson</h5>
+                                <p data-en="Completed HTML Basics" data-ar="أكملت أساسيات HTML">Completed HTML Basics</p>
+                            </div>
+                        </div>
+                        <div class="achievement-card">
+                            <div class="achievement-icon pending">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="achievement-info">
+                                <h5 data-en="Code Master" data-ar="سيد الكود">Code Master</h5>
+                                <p data-en="Complete 5 exercises" data-ar="أكمل 5 تمارين">Complete 5 exercises</p>
+                            </div>
+                        </div>
+                        <div class="achievement-card">
+                            <div class="achievement-icon pending">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div class="achievement-info">
+                                <h5 data-en="Fast Learner" data-ar="متعلم سريع">Fast Learner</h5>
+                                <p data-en="Complete course in 2 weeks" data-ar="أكمل الدورة في أسبوعين">Complete course in 2 weeks</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- PDF Viewer Modal -->
+    <div id="pdfModal" class="modal hidden">
+        <div class="modal-content pdf-viewer">
+            <div class="modal-header">
+                <h3 id="pdfTitle" data-en="PDF Viewer" data-ar="عارض PDF">PDF Viewer</h3>
+                <div class="modal-actions">
+                    <button class="btn-secondary" id="downloadPdf">
+                        <i class="fas fa-download"></i>
+                        <span data-en="Download" data-ar="تحميل">Download</span>
+                    </button>
+                    <button class="close-modal">&times;</button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="pdf-container" id="pdfContainer">
+                    <div class="pdf-placeholder">
+                        <i class="fas fa-file-pdf"></i>
+                        <p data-en="Loading PDF..." data-ar="جاري تحميل PDF...">Loading PDF...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="modal hidden">
+        <div class="modal-content video-viewer">
+            <div class="modal-header">
+                <h3 id="videoTitle" data-en="Video Tutorial" data-ar="فيديو تعليمي">Video Tutorial</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="video-container">
+                    <video id="courseVideo" controls>
+                        <source src="" type="video/mp4">
+                        <span data-en="Your browser does not support the video tag." data-ar="متصفحك لا يدعم تشغيل الفيديو">Your browser does not support the video tag.</span>
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="courses.js"></script>
+</body>
+</html>
